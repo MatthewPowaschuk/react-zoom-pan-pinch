@@ -24,8 +24,8 @@ class TransformComponent extends React.Component {
     } = this.context;
 
     const style = {
-      WebkitTransform: `translate3d(${positionX}px, ${positionY}px, 0) scale(${scale})`,
-      transform: `translate3d(${positionX}px, ${positionY}px, 0) scale(${scale})`,
+      WebkitTransform: `translate3d(${positionX}px, ${positionY}px, 0) scale3d(${scale}, ${scale}, 1)`,
+      transform: `translate3d(${positionX}px, ${positionY}px, 0) scale3d(${scale}, ${scale}, 1)`,
     };
     return (
       <div
